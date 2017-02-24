@@ -15,7 +15,7 @@ Creating a daily task logger [app](https://mimieam.github.io/timelog/) in React
   - [ ] a timeline items with a date
   - [ ] can be edited 
     *  [ ] ondblClick create a modal form 
-  - [ ]as tag with an icon indicating it's status
+  - [ ] as tag with an icon indicating it's status
     * [ ] started
     * [ ] in progress
     * [ ] completed
@@ -25,8 +25,26 @@ Creating a daily task logger [app](https://mimieam.github.io/timelog/) in React
 
 ```json 
 {
-
+  visibleFilter
+  tasks: [
+    {
+      text: 'worked on something awesome'
+      when: moment(), // a date from momentjs 
+      status: 'completed' // 
+    }
+  ]
 }
+```
+
+## Actions
+```javascript
+
+const ADD_TASK = "ADD_TASK"
+const EDIT_TASK = "EDIT_TASK"
+const DELETE_TASK = "DELETE_TASK"
+const SET_STATUS_TASK = "SET_STATUS_TASK"
+
+
 ```
 
 **What else do we need for component?**
@@ -57,3 +75,7 @@ Creating a daily task logger [app](https://mimieam.github.io/timelog/) in React
   *Less... that's what i forgot -_-
   *webpack ?? maybe
 
+
+
+**would be nice to have**
+vcode -> a project previewer which renders your project in a .5 opacity window always on top of your code for live update without leaving the editor
