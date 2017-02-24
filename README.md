@@ -13,16 +13,25 @@ Creating a daily task logger app in React
 
 **task**
   - [ ] a timeline items with a date
-  - [ ]can be edited 
-    *  [ ]ondblClick create a modal form 
+  - [ ] can be edited 
+    *  [ ] ondblClick create a modal form 
   - [ ]as tag with an icon indicating it's status
-    * [ ]started
-    * [ ]in progress
-    * [ ]completed
-    * [ ]abandoned
+    * [ ] started
+    * [ ] in progress
+    * [ ] completed
+    * [ ] abandoned
 
 **What else do we need for component?**
 > ...
+
+
+## progress..
+**Step 1**
+- integrate redux, react-router.
+- try out that eject script
+
+
+
 
 **Dev Stack**
   *React
