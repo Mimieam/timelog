@@ -43,8 +43,8 @@ class Task extends Component {
       statusColor = '#FB9633'
     }
     let status = 'undefined'
-    const tags = this.props.category.map((_tagName) => {
-      return <TaskTag color={TaskTagColorMap[_tagName]} type = {_tagName} />
+    const tags = this.props.category.map((_tagName, index) => {
+      return <TaskTag key={index} color={TaskTagColorMap[_tagName]} type = {_tagName} />
     })
     return (
       <Timeline.Item dot={<TaskIcon type={this.props.icon}/>}>
