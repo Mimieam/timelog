@@ -66,6 +66,9 @@ const SET_STATUS_TASK = "SET_STATUS_TASK"
 - `npm prune` remove all the extraneous package added by eject
 - `npm install` reinstall all your packages.
 
+> != vs !== 
+- the former does implicit type conversions while the latter doesn't
+- USE THE LATTER! 
 
 **Dev Stack**
   *React
