@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import TimeLineCard from './TimeLineCard'
 import Task from './Task'
+import moment from 'moment'
 
 import Timeline from 'antd/lib/timeline';
 import 'antd/lib/timeline/style/css'; 
@@ -26,7 +27,7 @@ class TaskList extends Component {
   
   render() {
     //this should return a list of task... so 
-    const tasks = this.props.tasks.map((x, i) => <Timeline.Item key={i}> {x.text}{x.when} </Timeline.Item>)
+    const tasks = this.props.tasks.map((x, i) => <Timeline.Item key={i}> {x.text}{moment(x.when).toString()} </Timeline.Item>)
 
     return (
       <TimeLineCard
