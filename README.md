@@ -9,10 +9,10 @@ Creating a daily task logger [app](https://mimieam.github.io/timelog/) in React
 
 **logView / TimelineCard**
   - [ ] an Card displaying the each task performed by the user this current week.
-  - [ ] renders timeline items
+  - [x] renders timeline items
 
 **task**
-  - [ ] a timeline items with a date
+  - [x] a timeline items with a date
   - [ ] can be edited 
     *  [ ] ondblClick create a modal form 
   - [ ] as tag with an icon indicating it's status
@@ -53,8 +53,13 @@ const SET_STATUS_TASK = "SET_STATUS_TASK"
 
 ## progress..
 **Step 1**
-- integrate redux, react-router.
-- try out that eject script  - looks nice... 
+- [x]integrate redux
+- [ ] react-router.
+- [x] try out that eject script  - looks nice... 
+- make it more responsive 
+  - [ ] bigger input 
+  - [ ] on key press - add to list
+  - [ ] increase font size
 
 
 **Self-Notes**
