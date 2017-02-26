@@ -23,14 +23,17 @@ Creating a daily task logger [app](https://mimieam.github.io/timelog/) in React
 
 ## State Shape
 
-```json 
+```javascript
 {
   visibleFilter
   tasks: [
     {
       text: 'worked on something awesome'
       when: moment(), // a date from momentjs 
-      status: 'completed' // 
+      status: 'completed',
+      month: mon, // relative to the `when` field 
+      weekOfTheMonth: num, // relative to the `when` field 
+      weekOfTheYear: num2 //relative to the `when` field 
     }
   ]
 }
