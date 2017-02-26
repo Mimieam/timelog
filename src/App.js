@@ -23,6 +23,7 @@ import 'antd/lib/tag/style/css';
 
 import UserInput from './components/UserInput'
 import TimelineCard from './components/TimeLineCard'
+import TaskList from './components/TaskList'
 import Task from './components/Task'
 
 import { connect } from 'react-redux'  
@@ -39,6 +40,8 @@ class App extends Component {
         <UserInput/>
 
         <hr />
+
+        <TaskList className="App-intro" title="Week1" style={{ width: 400, textAlign: 'initial' }}/>
 
         <TimelineCard className="App-intro" title="Week1" style={{ width: 400, textAlign: 'initial' }}>
           <Task status="complete" category={["personal","home", "school", "unknown"]}>

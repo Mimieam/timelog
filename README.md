@@ -4,8 +4,8 @@ Creating a daily task logger [app](https://mimieam.github.io/timelog/) in React
 ## Component / Container
 
 **UserInput**
-  - [ ] has a Input textbox and a data picker
-  - [ ] on submit ( of a button ) will save it's content to redux store
+  - [x] has a Input textbox and a data picker
+  - [x] on submit ( of a button ) will save it's content to redux store
 
 **logView / TimelineCard**
   - [ ] an Card displaying the each task performed by the user this current week.

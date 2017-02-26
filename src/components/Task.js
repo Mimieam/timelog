@@ -47,7 +47,7 @@ class Task extends Component {
       return <TaskTag key={index} color={TaskTagColorMap[_tagName]} type = {_tagName} />
     })
     return (
-      <Timeline.Item dot={<TaskIcon type={this.props.icon}/>}>
+      <Timeline.Item>
           {this.props.children}
           {tags}
         </Timeline.Item>
