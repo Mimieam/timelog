@@ -49,7 +49,7 @@ class Task extends Component {
     return (
       <Timeline.Item>
           {this.props.children}
-          {tags}
+          {tags} 
         </Timeline.Item>
     )
   }

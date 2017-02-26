@@ -41,9 +41,9 @@ class App extends Component {
 
         <hr />
 
-        <TaskList className="App-intro" title="Week1" style={{ width: 400, textAlign: 'initial' }}/>
+        <TaskList className="App-intro" title="Week1" style={{ width: "85%", textAlign: 'initial' }}/>
 
-        <TimelineCard className="App-intro" title="Week1" style={{ width: 400, textAlign: 'initial' }}>
+        <TimelineCard className="App-intro" title="Week1" style={{ width: "85%", textAlign: 'initial' }}>
           <Task status="complete" category={["personal","home", "school", "unknown"]}>
             AwesomeSauce
           </Task>
