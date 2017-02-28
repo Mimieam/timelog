@@ -33,6 +33,7 @@ Creating a daily task logger [app](https://mimieam.github.io/timelog/) in React
   visibleFilter
   tasks: [
     {
+      id:  uuid.v4() 
       text: 'worked on something awesome'
       when: moment(), // a date from momentjs 
       status: 'completed',

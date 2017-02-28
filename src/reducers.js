@@ -1,17 +1,24 @@
+import uuid from 'node-uuid'
+import moment from 'moment'
+
 import { combineReducers } from 'redux'
 import { ADD_TASK, EDIT_TASK, DELETE_TASK, SET_STATUS_TASK } from './Actions'
-
 
 
 function timelog(state=[], action) {
   switch (action.type) {
     case ADD_TASK:
+      const _when = action.data.when
       return [
         ...state,
         {
+          id: uuid.v4(),
           text: action.data.text,
-          when: action.data.when,
-          status: action.data.status
+          when: _when,
+          status: action.data.status,
+          month: _when.month() + 1, // moment month is from 0 - 11 
+          weekOfTheMonth: _when.week() - moment(_when).startOf('month').week() + 1,
+          weekOfTheYear: _when.weeks()
         }
       ]
     case EDIT_TASK:
