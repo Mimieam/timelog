@@ -26,9 +26,16 @@ const mapStoreToProps = (state) => {
 class TaskList extends Component {
   
   render() {
-    //this should return a list of task... so 
-    const tasks = this.props.tasks.map((x, i) => <Timeline.Item key={i}> {x.text}{moment(x.when).toString()} </Timeline.Item>)
+    // this should return a list of task... so 
+    const _t = this.props.tasks
+     _t.filter((x)=>{ moment(x.when) })
+    let tasks = this.props.tasks.sort((a , b)=> a.when < b.when)
+    tasks = tasks.map((x, i) => <Timeline.Item key={i}> {x.text}{moment(x.when).toString()} </Timeline.Item>)
+    // tasks = this.props.tasks.map((x, i) => <Timeline.Item key={i}> {x.text}{moment(x.when).toString()} </Timeline.Item>)
 
+    // potential problem for later ... how to divise the List into weeks and spitting up multi timelinecard
+    // too tired to do anything productive 
+    // next 
     return (
       <TimeLineCard
         className={this.props.className}

@@ -20,7 +20,7 @@ import { add_task } from '../Actions'
 class UserInput extends Component {
     
     submit(e) {
-       e.preventDefault();
+       e.preventDefault()
        const antdInput = this.refs.field;
        const value = antdInput.refs.input.value 
        if (value) {
@@ -30,16 +30,25 @@ class UserInput extends Component {
             status: 'completed'
           })) 
        } 
-       // dispatch value to redux store
-       //this.props.callback(field.value);
-       console.log(value) 
        antdInput.refs.input.value='';
-   }
+    }
+  
+    handleKeyPress(e) {
+      if (e.which === 13) {
+        this.submit(e) 
+      }
+    } 
+  
     render(){
         return (
             <form>
                 <InputGroup compact>
-                    <Input ref='field' style={{ maxWidth: '50%' }} placeholder="Got something to Log?" />
+                    <Input
+                        ref='field'
+                        style={{ maxWidth: '50%' }}
+                        onKeyPress={this.handleKeyPress.bind(this)}
+                        placeholder="Got something to Log?"
+                    />
                     <DatePicker
                         defaultValue={moment()}
                         format={'MM/DD/YY - h:mm:ss a'}
