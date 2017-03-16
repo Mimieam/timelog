@@ -31,25 +31,25 @@ let TaskTagColorMap = {
 }
 
 class Task extends Component {
-  constructor(props) {
-    super(props)
-  }
+  // constructor(props) {
+  //   super(props)
+  // }
   render() {
-    let statusColor = "#108CE5"
-    if (this.props.status === 'completed') {
-      statusColor = "#A7E040"
-    }
-    else if (this.props.status === 'inProgress') {
-      statusColor = '#FB9633'
-    }
-    let status = 'undefined'
+    // let statusColor = "#108CE5"
+    // if (this.props.status === 'completed') {
+    //   statusColor = "#A7E040"
+    // }
+    // else if (this.props.status === 'inProgress') {
+    //   statusColor = '#FB9633'
+    // }
+    // let status = 'undefined'
     const tags = this.props.category.map((_tagName, index) => {
-      return <TaskTag key={index} color={TaskTagColorMap[_tagName]} type = {_tagName} />
+      return <TaskTag key={index} color={TaskTagColorMap[_tagName]} type={_tagName} />
     })
     return (
       <Timeline.Item>
           {this.props.children}
-          {/*{tags} */}
+          {tags} 
       </Timeline.Item>
     )
   }

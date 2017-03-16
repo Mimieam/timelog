@@ -13,7 +13,12 @@ Creating a daily task logger [app](https://mimieam.github.io/timelog/) in React
   - [x] renders timeline items
   - [ ] Week # and Month as card title
   - [ ] maybe have the start and end of the week # too ? 'DD <-> DD'
+  - [ ] Collapsible week card?
 
+
+**infinite scroll /  TaskList**
+  - [ ] first card is the current week
+  - [ ] 
 
 **task**
   - [x] a timeline items with a date

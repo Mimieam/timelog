@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { connect } from 'react-redux'  
 
 import logo from './logo.svg';
 import './App.css';
@@ -6,29 +7,31 @@ import './App.css';
 import Button from 'antd/lib/button';
 import 'antd/lib/button/style/css';
 
-import Timeline from 'antd/lib/timeline';
-import 'antd/lib/timeline/style/css'; 
+// import Timeline from 'antd/lib/timeline';
+// import 'antd/lib/timeline/style/css'; 
 
-import Card from 'antd/lib/card';
-import 'antd/lib/card/style/css';
+// import Card from 'antd/lib/card';
+// import 'antd/lib/card/style/css';
 
-import Icon from 'antd/lib/icon';
-import 'antd/lib/icon/style/css';
+// import Icon from 'antd/lib/icon';
+// import 'antd/lib/icon/style/css';
 
-import { Rate } from 'antd'
-import 'antd/lib/rate/style/css';
+// import { Rate } from 'antd'
+// import 'antd/lib/rate/style/css';
 
-import { Tag } from 'antd'
-import 'antd/lib/tag/style/css';
+// import { Tag } from 'antd'
+// import 'antd/lib/tag/style/css';
 
 import UserInput from './components/UserInput'
 import TimelineCard from './components/TimeLineCard'
 import TaskList from './components/TaskList'
 import Task from './components/Task'
 
-import { connect } from 'react-redux'  
 
 class App extends Component {
+  // constructor(props){
+  //   super(props)
+  // }
   render() {
     return (
       <div className="App">
