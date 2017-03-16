@@ -27,7 +27,7 @@ let TaskTagColorMap = {
   home:"#0CC",
   school:"#A7E040",
   work:"#108CE5",
-  personal:"#FB9633",
+  personal:"#FB9633"
 }
 
 class Task extends Component {

@@ -29,9 +29,9 @@ import Task from './components/Task'
 
 
 class App extends Component {
-  // constructor(props){
-  //   super(props)
-  // }
+  constructor(props){
+    super(props)
+  }
   render() {
     return (
       <div className="App">
@@ -72,7 +72,6 @@ class App extends Component {
               iniloremtial  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quasi commodi dolorum natus aliquid architecto consectetur officia, minus laudantium doloremque repellendus nihil possimus, temporibus voluptates at, saepe nostrum tempora ea! ipsum dolor sit amet, consectetur adipisicing elit. Officia vel atque ipsam labore enim accusamus aliquam eligendi, repudiandae necessitatibus totam. Inventore et cupiditate aliquam laudantium, praesentium dolorem ipsa rem, deserunt. ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, nesciunt provident ducimus harum autem temporibus? Facere veniam, odio expedita suscipit iste, autem modi cumque id nam dignissimos nostrum corrupti! Repellendus. ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis, quod molestias earum qui soluta ipsam accusantium aspernatur id rerum blanditiis nostrum repellat, perspiciatis deserunt error. Delectus, sint esse aut? problems being solved 2015-09-01<Rate defaultValue={5} /></Timeline.Item>
           </Timeline>
         </Card>*/}
-        <Button>Yo</Button>
       </div>
     );
   }

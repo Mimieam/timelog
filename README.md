@@ -6,7 +6,7 @@ Creating a daily task logger [app](https://mimieam.github.io/timelog/) in React
 **UserInput**
   - [x] has a Input textbox and a data picker
   - [x] on submit ( of a button ) will save it's content to redux store
-  - [ ] onReturn / Enter add
+  - [x] onReturn / Enter add
 
 **logView / TimelineCard**
   - [ ] an Card displaying the each task performed by the user in a week.

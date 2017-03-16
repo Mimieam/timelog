@@ -24,11 +24,11 @@ class TaskList extends Component {
   
   render() {
     // this should return a list of task... 
-    const _t = this.props.tasks
-    _t.filter((x) => {
-      console.log(x)
-      return moment(x.when)
-    }) // what is this supposed to be doing ?
+    // const _t = this.props.tasks
+    // _t.filter((x) => {
+    //   console.log(x)
+    //   return moment(x.when)
+    // }) // what is this supposed to be doing ?
   
     let tasks = this.props.tasks.sort((a, b) => moment(a.when) < moment(b.when))
     
@@ -40,7 +40,7 @@ class TaskList extends Component {
     return (
       <TimeLineCard
         className={this.props.className}
-        title={moment().format("MMMM").toString()}//{this.props.title}
+        title={moment().format("MMMM").toString()}
         extra={<a href="#">Settings</a>}
         style={this.props.style} >
       
